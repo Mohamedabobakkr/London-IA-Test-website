@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu } from 'lucide-react';
+import logo from '../assets/images/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -9,7 +10,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-indigo-600">LIA</span>
+            <img
+              src={logo}
+              alt="LIA Logo"
+              className="h-[100px] w-auto"
+            />
           </div>
           
           {/* Desktop Menu */}
